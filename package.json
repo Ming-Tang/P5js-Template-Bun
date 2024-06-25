@@ -1,0 +1,23 @@
+{
+  "name": "p5",
+  "module": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "watch": "bun build src/index.ts --outdir ./dist --target browser --watch",
+    "build": "bun build src/index.ts --outdir ./dist --target browser --minify",
+    "lint": "bunx @biomejs/biome lint src",
+    "format": "bunx @biomejs/biome format src --write"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@types/p5": "^1.7.6",
+    "p5": "^1.9.4",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.0.0"
+  }
+}
